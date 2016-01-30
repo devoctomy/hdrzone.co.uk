@@ -95,7 +95,7 @@
 		height: 32px;
 	}			
 	.blogpostitemcontent{
-		height: 176px;
+		height: auto;
 	}
 	.blogpostitemshrunkpic{
 		display: none;
