@@ -5,7 +5,11 @@ layout: default
 <div class="main-post-list">
 
   <ol class="post-list">
+	{% assign isOdd = false %}
     {% for post in paginator.posts %}
+	  {% if isOdd %}
+	    <p>ODD!</p>
+	  {% endif %}
       <li>
 	  	<div class="bloglistitemcontainer">
 			{% if post.postimage %}
@@ -32,6 +36,7 @@ layout: default
 		</div> 
         <hr class="post-list__divider">
       </li>
+	  {% assign isOdd = !isOdd %}
     {% endfor %}
   </ol>
 
