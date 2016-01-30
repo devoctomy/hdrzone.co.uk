@@ -8,9 +8,11 @@ layout: default
     {% for post in paginator.posts %}
       <li>
 	  	<div class="bloglistitemcontainer">
-			<div class="bloglistitemcontainerright">
-				<img src="http://www.androidguys.com/wp-content/uploads/2016/01/6982647-sunset-over-sea.jpg" width="320" height="240" />
-			</div>
+			{{% if post.postimage %}}
+				<div class="bloglistitemcontainerright">					
+					<img src="{{ post.postimage }}" width="320" height="240" />
+				</div>
+			{{% endif %}}
 			<div class="bloglistitemcontainerleft">
 				<div class="blogpostitemtitle">
 					<h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
@@ -18,9 +20,11 @@ layout: default
 				<div class="blogpostitemcontent">
 					<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
 				</div>
-				<div class="blogpostitemshrunkpic">
-					<img src="http://www.androidguys.com/wp-content/uploads/2016/01/6982647-sunset-over-sea.jpg" width="100%" />
-				</div>
+				{{% if post.postimage %}}
+					<div class="blogpostitemshrunkpic">
+						<img src="{{ post.postimage }}" />
+					</div>
+				{{% endif %}}
 				<div class="blogpostitemfooter">
 					<div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
 				</div>
