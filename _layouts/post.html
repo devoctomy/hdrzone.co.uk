@@ -13,18 +13,14 @@ layout: default
     {{ content }}
   </section>
   
-	<div id="main" role="main">
-      <section class="slider">
-        <div class="flexslider">
-          <ul class="slides">
-		    {% for item in page.slideshow %}
-              <li>
-  	    	    <img src="{{ item.background_image_path }}" />
-                <p class="flex-caption">{{ item.sub_heading }}</p>
-  	          </li>
-			{% endfor %}
-          </ul>
-        </div>
-      </section>
-    </div>
+	<div class="flexslider">
+	  <ul class="slides">
+		{% for item in page.slideshow %}
+		  <li>
+			<img src="{{ item.background_image_path }}" />
+			<p class="flex-caption">{{ item.sub_heading }}</p>
+		  </li>
+		{% endfor %}
+	  </ul>
+	</div>
 </article>
