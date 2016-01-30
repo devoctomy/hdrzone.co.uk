@@ -4,15 +4,11 @@ title:  "Test"
 date:   2016-01-08 15:04:23
 categories: [test]
 tags: [test]
-slideshow:
- - background_image_path: http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg
-   main_heading: Cat
-   sub_heading: This is a photo of a cat
-   pop_up_image_path: http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg
- - background_image_path: http://c.fastcompany.net/multisite_files/fastcompany/poster/2014/01/3025003-poster-p-dog-2.jpg
-   main_heading: Dog
-   sub_heading: This is a photo of a dog
-   pop_up_image_path: http://c.fastcompany.net/multisite_files/fastcompany/poster/2014/01/3025003-poster-p-dog-2.jpg
+photos:
+ - description: This is a photo of a cat
+   url: /images/test/1.JPG
+ - description: This is a photo of a dog
+   url: /images/test/2.JPG
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

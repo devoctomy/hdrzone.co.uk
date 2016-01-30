@@ -15,10 +15,10 @@ layout: default
   
 	<div class="flexslider">
 	  <ul class="slides">
-		{% for item in page.slideshow %}
+		{% for item in page.photos %}
 		  <li>
-			<img src="{{ item.background_image_path }}" />
-			<p class="flex-caption">{{ item.sub_heading }}</p>
+			<img src="{{ item.url }}" />
+			<p class="flex-caption">{{ item.description }}</p>
 		  </li>
 		{% endfor %}
 	  </ul>
