@@ -56,51 +56,51 @@
 /* Nicks */
 
 @media screen and (min-width: 0px) and (max-width: 800px) { 
-	.bloglistitem {
-		width: 100%;
-		height: 272px;
+	.bloglistitemcontainer {
+	   height: auto;
 	}
-	.bloglistitemheader{
-		width: 84%;
+	.bloglistitemcontainerright {
+		width: 0;
+		float: right;
+		display: none;
+	}
+	.bloglistitemcontainerleft {
+		width: auto;
+	}		
+	.blogpostitemtitle{
 		height: 32px;
+	}			
+	.blogpostitemcontent{
+		height: auto;
 	}
-	.bloglistitemcontent{
-		width: 84%;
-		height: 100px;
+	.blogpostitemshrunkpic{
+		display: block;
 	}
-	.bloglistitemfooter{
-		width: 84%;
+	.blogpostitemfooter{
 		height: 32px;
-		top-margin-top: 240px;
-	}
-	.bloglistitemphoto{
-		width: 16%;
-		height: 240px;
 	}
 }
-@media screen and (min-width: 800px) and (max-width: 2048px) { 
-	.bloglistitem {
-		width: 100%;
-		height: 240px;
+@media screen and (min-width: 800px) { 
+	.bloglistitemcontainer {
+	   height: 240px;
 	}
-	.bloglistitemheader{
-		width: 100%;
+	.bloglistitemcontainerright {
+		width: 320px;
+		float: right;
+	}
+	.bloglistitemcontainerleft {
+		width: auto;
+	}		
+	.blogpostitemtitle{
 		height: 32px;
-	}
-	.bloglistitemcontent{
-		width: 100%;
+	}			
+	.blogpostitemcontent{
 		height: 176px;
 	}
-	.bloglistitemfooter{
-		width: 100%;
-		height: 32px;
+	.blogpostitemshrunkpic{
+		display: none;
 	}
-	.bloglistitemphoto{
-		width: 320px;
-		height: 240px;
-		position: relative;
-		z-order: 1000;
-		top: -208px;
-		float: right;
+	.blogpostitemfooter{
+		height: 32px;
 	}
 }
