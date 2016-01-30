@@ -4,7 +4,7 @@ title:  "Test"
 date:   2016-01-08 15:04:23
 categories: [test]
 tags: [test]
-photos:
+slideshow:
  - background_image_path: http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg
    main_heading: Cat 1
    sub_heading: This is a photo of a cat
