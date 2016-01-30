@@ -8,10 +8,9 @@ layout: default
     {% for post in paginator.posts %}
       <li>
 	  	<div class="bloglistitemcontainer">				
-			{% assign bloglistitempostimage = post.postimage | strip_newlines %}
-			{{% if bloglistitempostimage != "" %}}
+			{{% if post.showpostimageinlist %}}
 				<div class="bloglistitemcontainerright">					
-					<img src="{{ bloglistitempostimage }}" width="320" height="240" />
+					<img src="{{ post.postimage }}" width="320" height="240" />
 				</div>
 			{{% endif %}}
 			<div class="bloglistitemcontainerleft">
@@ -21,9 +20,9 @@ layout: default
 				<div class="blogpostitemcontent">
 					<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
 				</div>
-				{{% if bloglistitempostimage != "" %}}
+				{{% if post.showpostimageinlist %}}
 					<div class="blogpostitemshrunkpic">
-						<img src="{{ bloglistitempostimage }}" width="100%" />
+						<img src="{{ post.postimage }}" width="100%" />
 					</div>
 				{{% endif %}}
 				<div class="blogpostitemfooter">
