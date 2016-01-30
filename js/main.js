@@ -1,11 +1,6 @@
 ---
 layout: null
 ---
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
 
 $(document).ready(function () {
   $('a.blog-button').click(function (e) {
@@ -38,4 +33,7 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
 })
