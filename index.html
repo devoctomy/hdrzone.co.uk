@@ -8,7 +8,7 @@ layout: default
     {% for post in paginator.posts %}
       <li>
 	  	<div class="bloglistitemcontainer">
-			{{% if post.postimage != blank %}}
+			{{% if post.postimage %}}
 				<div class="bloglistitemcontainerright">					
 					<img src="{{ post.postimage }}" width="320" height="240" />
 				</div>

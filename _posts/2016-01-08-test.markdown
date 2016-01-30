@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Test"
-date:   2016-01-08 15:04:23
+title: "Test"
+date: 2016-01-08 15:04:23
 categories: [test]
 tags: [test]
 photos:
