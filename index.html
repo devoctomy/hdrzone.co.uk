@@ -17,11 +17,11 @@ layout: default
       <li>
 	  	<div class="bloglistitemcontainer">
 			{% if post.postimage %}
-				<div class="{ rightStyle }">					
+				<div class="{{ rightStyle }}">					
 					<img src="{{ post.postimage }}" width="320" height="240" />
 				</div>
 			{% endif %}
-			<div class="{ leftStyle }">
+			<div class="{{ leftStyle }}">
 				<div class="blogpostitemtitle">
 					<h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 				</div>
