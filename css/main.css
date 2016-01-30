@@ -82,7 +82,7 @@
 }
 @media screen and (min-width: 1580px) { 
 	.bloglistitemcontainer {
-	   height: 240px;
+	   height: auto;
 	}
 	.bloglistitemcontainerright {
 		width: 320px;
