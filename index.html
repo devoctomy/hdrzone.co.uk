@@ -9,7 +9,7 @@ layout: default
       <li>
 	  	<div class="bloglistitemcontainer">				
 			{% assign bloglistitempostimage = post.postimage | strip_newlines %}
-			{{% if bloglistitempostimage %}}
+			{{% if bloglistitempostimage != "" %}}
 				<div class="bloglistitemcontainerright">					
 					<img src="{{ bloglistitempostimage }}" width="320" height="240" />
 				</div>
@@ -21,7 +21,7 @@ layout: default
 				<div class="blogpostitemcontent">
 					<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
 				</div>
-				{{% if bloglistitempostimage %}}
+				{{% if bloglistitempostimage != "" %}}
 					<div class="blogpostitemshrunkpic">
 						<img src="{{ bloglistitempostimage }}" width="100%" />
 					</div>
