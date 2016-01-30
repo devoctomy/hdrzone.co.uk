@@ -36,7 +36,11 @@ layout: default
 		</div> 
         <hr class="post-list__divider">
       </li>
-	  {% assign isOdd = !isOdd %}
+	  {% if isOdd %}
+		{% assign isOdd = false %}
+	  {% else %}
+	    {% assign isOdd = true %}
+	  {% endif %}
     {% endfor %}
   </ol>
 
