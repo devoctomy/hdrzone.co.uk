@@ -61,20 +61,20 @@
 		height: 272px;
 	}
 	.bloglistitemheader{
-		width: 100%;
+		width: 84%;
 		height: 32px;
 	}
 	.bloglistitemcontent{
-		width: 100%;
+		width: 84%;
 		height: 100px;
 	}
 	.bloglistitemfooter{
-		width: 100%;
+		width: 84%;
 		height: 32px;
 		top-margin-top: 240px;
 	}
 	.bloglistitemphoto{
-		width: 320px;
+		width: 16%;
 		height: 240px;
 	}
 }
