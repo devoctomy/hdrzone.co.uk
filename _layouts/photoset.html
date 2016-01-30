@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in page.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <section class="post">
+    {{ content }}
+  </section>
+  
+<div class="carousel-inner">
+  {% for item in page.photos %}
+    {% if forloop.index == 1 %}
+      <div class="item active" style="background-image: url({{ item.url }})">
+    {% else %}
+      <div class="item" style="background-image: url({{ item.url }})">
+    {% endif %}
+      <div class="container">
+        <div class="row slide-margin">
+          <div class="col-sm-6">
+            <div class="carousel-content">
+              <h1 class="animation animated-item-1">{{ item.title }}</h1>
+              <h2 class="animation animated-item-2">{{ item.description }}</h2>
+              <a class="btn-slide animation animated-item-3" href="{{ item.read_more_link }}">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 hidden-xs animation animated-item-4">
+            <div class="slider-img">
+              <img src="{{ item.url }}" class="img-responsive">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!--/.item-->
+  {% endfor %}
+</div><!--/.carousel-inner-->
+</article>

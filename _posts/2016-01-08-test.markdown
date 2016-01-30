@@ -1,0 +1,12 @@
+---
+layout: photoset
+title:  "Test"
+date:   2016-01-08 15:04:23
+categories: [test]
+tags: [test]
+photos:
+ - name: "Photo 1"
+   description: "This is a description of a photos""
+   url: "http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg"
+---
+
