@@ -55,7 +55,7 @@
 
 /* Nicks */
 
-@media screen and (min-width: 0px) and (max-width: 800px) { 
+@media screen and (min-width: 0px) and (max-width: 1580px) { 
 	.bloglistitemcontainer {
 	   height: auto;
 	}
@@ -80,7 +80,7 @@
 		height: 32px;
 	}
 }
-@media screen and (min-width: 800px) { 
+@media screen and (min-width: 1580px) { 
 	.bloglistitemcontainer {
 	   height: 240px;
 	}
