@@ -52,3 +52,55 @@
   border: 3px solid #fff;
   border-radius:100%;
 }
+
+/* Nicks */
+
+@media screen and (min-width: 0px) and (max-width: 800px) { 
+	.bloglistitem {
+		width: 100%;
+		height: 272px;
+	}
+	.bloglistitemheader{
+		width: 100%;
+		height: 32px;
+	}
+	.bloglistitemcontent{
+		width: 100%;
+		height: 100px;
+	}
+	.bloglistitemfooter{
+		width: 100%;
+		height: 32px;
+		top-margin-top: 240px;
+	}
+	.bloglistitemphoto{
+		width: 320px;
+		height: 240px;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 2048px) { 
+	.bloglistitem {
+		width: 100%;
+		height: 240px;
+	}
+	.bloglistitemheader{
+		width: 100%;
+		height: 32px;
+	}
+	.bloglistitemcontent{
+		width: 100%;
+		height: 176px;
+	}
+	.bloglistitemfooter{
+		width: 100%;
+		height: 32px;
+	}
+	.bloglistitemphoto{
+		width: 320px;
+		height: 240px;
+		position: relative;
+		z-order: 1000;
+		top: -208px;
+		float: right;
+	}
+}

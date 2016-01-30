@@ -7,9 +7,20 @@ layout: default
   <ol class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
-        <div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
+	    <div class="bloglistitem">			
+			<div class="bloglistitemheader">
+				<h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+			</div>
+			<div class="bloglistitemcontent">
+				<p class="excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}&hellip;</p>
+			</div>
+			<div class="bloglistitemphoto">
+				<img src="http://www.androidguys.com/wp-content/uploads/2016/01/6982647-sunset-over-sea.jpg" width="320" height="240" />
+			</div>
+			<div class="bloglistitemfooter">
+				<div class="post-list__meta"><time datetime="{{ post.date | date: "%-d %b %Y" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time> &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span></div>
+			</div>
+		</div>   
         <hr class="post-list__divider">
       </li>
     {% endfor %}
