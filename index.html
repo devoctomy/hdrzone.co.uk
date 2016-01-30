@@ -5,23 +5,15 @@ layout: default
 <div class="main-post-list">
 
   <ol class="post-list">
-	{% assign isOdd = true %}
     {% for post in paginator.posts %}
-	  {% if isOdd %}
-	    {% assign leftStyle = "bloglistitemcontainerleft" %}
-		{% assign rightStyle = "bloglistitemcontainerright" %}
-	  {% else %}
-	  	{% assign leftStyle = "bloglistitemcontainerright" %}
-		{% assign rightStyle = "bloglistitemcontainerleft" %}
-	  {% endif %}
       <li>
 	  	<div class="bloglistitemcontainer">
 			{% if post.postimage %}
-				<div class="{{ rightStyle }}">					
+				<div class="bloglistitemcontainerright">					
 					<img src="{{ post.postimage }}" width="320" height="240" />
 				</div>
 			{% endif %}
-			<div class="{{ leftStyle }}">
+			<div class="bloglistitemcontainerleft">
 				<div class="blogpostitemtitle">
 					<h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 				</div>
@@ -40,11 +32,6 @@ layout: default
 		</div> 
         <hr class="post-list__divider">
       </li>
-	  {% if isOdd %}
-		{% assign isOdd = false %}
-	  {% else %}
-	    {% assign isOdd = true %}
-	  {% endif %}
     {% endfor %}
   </ol>
 
