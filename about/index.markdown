@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>About Me</h1>
+# About Me
 
 Welcome to the personal photography blog of Nick Pateman.  I am a Software Engineer by profession but one of my hobbies is photography, that's when I get teh chance to go out and take a whole bunch of photos anyway, which at the moment, hasn't been too often but I'm hoping to get out more this year.
 
