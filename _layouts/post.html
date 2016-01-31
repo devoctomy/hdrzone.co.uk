@@ -18,7 +18,7 @@ layout: default
 	  <ul class="slides">
 		{% for item in page.photos %}
 		  <li>
-			<img src="{{ item.url }}" />
+			<img src="{{ page.photosbase }}{{ item.url }}" />
 			<p class="flex-caption">{{ item.description }}</p>
 		  </li>
 		{% endfor %}
