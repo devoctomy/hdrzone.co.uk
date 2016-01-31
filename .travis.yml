@@ -14,6 +14,7 @@ deploy:
     secure: GlPbXxvOqcMs6R0EBDr+L1YODJhDIqfFpPC7v3QMgVyg1/NE7oekJeV3R22x9rAcmisMaiMuXcWwDx1LqbZGWIZvbImWL/QwyZc7oQ0VcERT4TnZkOvyXPxkUZrLlc8fvXWpsMuhG3EnU8BfHbzkD5zEsldedHB/rqdOnxfxDdAelG8J457/FgEIXyc+pQBcVBDJXXwLzJQqVvDsgy5lYILALfJnYflqwtfWj6VVO03d16dGpGVuajjtvXyLEmVBtZXgdBM/+/GcdPGJ/XCO+8OlvXoEMFDIf4SFjKeNxaSxsj7ykicJwYxJDncOXsdRo6d47i4kQVmXzFqw9WJkvPbRyKQx5tcN3MsK0JYAR1j9KtdbeyuQX1A9Wi1tnrbh9SiKorV6WRl4P+E0e8Y3NV28yC70mMzx5fi2FxymbH7FsPn82vtw7LQE+sIXF7CP5adAQWQSiolsa4l7vszWgNuLfDf9PYU6fWHThCDxUAnX+0XewkLfBhSLYWT7H0adIkAXcZhu0BoLNZZBPv3P6T2Oia5QCbQj/BLWj1RLe39TaOu0edHJys0sC3kNqYP+dTG6s+M756qk6sFqfTS8Ly7TW8/QD8ChwzJlet2IS3BirIF3LV1b4IeuwFNaRhB5yHCdE7v1WF0EB9Dz2PYM2U5m1Y3/aWyorEG8aXc1Xkg=
   bucket: www.hdrzone.co.uk
   local-dir: _site
+  skip_cleanup: true
   acl: public_read
   on:
     repo: devoctomy/hdrzone.co.uk
