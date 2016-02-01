@@ -4,7 +4,7 @@ description: 'The personal photography blog of Nick Pateman'
 url: 'http://www.hdrzone.co.uk' 
 baseurl: '/'
 googletagmanager: 'GTM-K8GX8V'
-disqus_shortname: hdrzone
+disqus_shortname: hdrzoneuk
 
 author:
   name: 'Nick Pateman'
